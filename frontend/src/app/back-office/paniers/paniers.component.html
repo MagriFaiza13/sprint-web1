@@ -1,0 +1,86 @@
+
+<div class="cartBox">
+    <!--<form [formGroup]="form">--> 
+     <form>
+         <div class="row">
+                 <div class="col-md-3">
+                     <label for="">Start Date</label>
+                     <input type="date"  class="form-control">
+                 </div>
+                 <div class="col-md-3">
+                     <label for="">End Date</label>
+                     <input type="date"  class="form-control" >
+                 </div>
+                 <div class="col-md-2 d-flex align-items-end">
+                     <button class="btn btn-success" >Apply</button>
+                 </div>
+         </div>
+     </form>
+         
+     <table class="table table-striped">
+         <thead>
+             <!-- <tr  *ngFor="let p of pan" class="text-center"> -->
+                 <th>Date</th>
+                 <th></th>
+                 <th >Quantity</th>
+                 <th></th>
+             <!-- </tr> -->
+         </thead>
+         <tbody>
+            <tr>
+                <td></td>
+                <td>date</td>
+                <td>
+                   
+                </td>
+                <td >
+                    <button class="btn btn-danger mx-2">Delete</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#viewCart">View</button>
+                </td>
+            </tr>
+        </tbody> 
+    </table>
+    
+</div>
+
+
+
+<div class="modal fade " id="viewCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 900px!important">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="cartBox">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th style="width: 25%;">Quantity</th>
+                            <th>Totle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody> 
+                </table>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
